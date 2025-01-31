@@ -9,6 +9,7 @@ for line in fhand:
     for element in lst:
         number1 = int(re.findall(r'mul\((\d{1,3})', element)[0])
         number2 = int(re.findall(r'\,(\d{1,3})\)', element)[0])
+        # print(number1, number2)
         total += (number1 * number2)
 
 print(total)
